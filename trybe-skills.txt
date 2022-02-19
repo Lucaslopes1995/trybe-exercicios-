@@ -1,8 +1,8 @@
-O que eu vou aprender na Trybe:
-
 - Unix
 - Bash
 - Git
-React
--Js
--Softskills
+- React
+- Js
+- Softskills
+- HTML
+- CSS
