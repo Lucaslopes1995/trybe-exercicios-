@@ -1,4 +1,4 @@
-let n=5;
+let n=19;
 let meioTriangulInvertido="";
 let meiostring=(n/2)-0.5;
 let a=0;
@@ -8,13 +8,15 @@ for(let linha=0;linha<n;linha+=1){  //For para criação de linhas
         
         if(linha%2==0){ 
             
-            if(coluna==meiostring){
+            if(coluna==meiostring && linha==0){
                 meioTriangulInvertido+="*";
-            }else if(meiostring-a <= coluna && coluna <= meiostring+a){
+            }else if(meiostring-a == coluna || coluna == meiostring+a){
+                meioTriangulInvertido+="*";
+            }else if(linha==n-1){
                 meioTriangulInvertido+="*";
             }else{
-            meioTriangulInvertido+=" ";
-            }
+                meioTriangulInvertido+=" ";
+                }
             
         }else{
             meioTriangulInvertido+=" ";
