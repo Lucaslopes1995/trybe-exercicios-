@@ -37,11 +37,12 @@ function validadorOrdemCorreta(posicaoAnterior,posicaoAtual,authenticacaoPrimeir
         valorTotalDoNumeroRomano=valorTotalDoNumeroRomano-(2*valuesRomanos[posicaoAnterior])+valuesRomanos[posicaoAtual];
         //console.log(posicaoAnterior,posicaoAtual,validarordem,valorTotalDoNumeroRomano,"Anterior")
     }else if(posicaoAtual>posicaoAnterior+1){
-        validarordem=false;
+        validarordem=true;
+        valorTotalDoNumeroRomano=valorTotalDoNumeroRomano-(2*valuesRomanos[posicaoAnterior])+valuesRomanos[posicaoAtual];
         //console.log(posicaoAnterior,posicaoAtual,validarordem,valorTotalDoNumeroRomano,"Errado")
         
     }
-    console.log(posicaoAnterior,posicaoAtual,validarordem,valorTotalDoNumeroRomano,"Primeiro",posicaoAtual+1)
+    //console.log(posicaoAnterior,posicaoAtual,validarordem,valorTotalDoNumeroRomano,"Primeiro",posicaoAtual+1)
     return validarordem;
     
 }
@@ -84,13 +85,10 @@ function geral (numero,obj){
     valuesRomanos = Object.values(obj);
     valorDoNumero=valorEmNDoObjeto(numero)
 
-    if(validarordem==true){
-        //console.log("O Valore em Decimal é "+valorTotalDoNumeroRomano);
-    }else{
-        console.log("O Valore está em Ordem Errada ");
-    }
+
+    console.log("O Valor de "+numero+" em Decimal é "+valorTotalDoNumeroRomano);
     
       
 }
 
-geral("DCCCV",tabelaConsulta)
+geral("IL",tabelaConsulta)
