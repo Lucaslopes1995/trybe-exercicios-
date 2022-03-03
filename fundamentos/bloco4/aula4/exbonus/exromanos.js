@@ -47,7 +47,7 @@ function validadorOrdemCorreta(posicaoAnterior,posicaoAtual,authenticacaoPrimeir
     
 }
 
-function valorEmNDoObjeto (numeroAconverter,arrayBase){
+function valorEmNDoObjeto (numeroAconverter){
     
             
     //console.log(keyObj,numero[key],valorDoNumero)
@@ -91,4 +91,4 @@ function geral (numero,obj){
       
 }
 
-geral("IL",tabelaConsulta)
+geral("LVI",tabelaConsulta)
