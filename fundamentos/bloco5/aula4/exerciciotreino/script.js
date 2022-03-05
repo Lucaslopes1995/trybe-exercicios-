@@ -10,27 +10,13 @@ addEventListener("keypress",function (e){
 
 
 let usuarioLogado="";
-//console.log(localStorage.getItem("Usuarios"))
 usuarioLogado=JSON.parse(localStorage.getItem("Usuarios"))
-
-/*let usuarios={
-    usuario1:"Lucas",
-    usuario2:"Fernanda",
-    usuario3:"Gabriela",
-}*/
-//localStorage.setItem("Usuarios",JSON.stringify(usuarioLogado))
-//usuarios=JSON.parse(localStorage.getItem("Usuarios"))
-
-//if(usuarios["usuario3"],usuarioLogado)
-
-//console.log(usuarios["usuario1"])
 
 window.onload=validadorUsuario();
 
 
 function pegaUsuario(){
     usuarioLogado=input.value
-    //usuarios["usuario"]=usuarios
     input.value="";
     localStorage.setItem("Usuarios",JSON.stringify(usuarioLogado));
     validadorUsuario();
