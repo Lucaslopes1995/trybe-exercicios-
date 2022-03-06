@@ -3,6 +3,8 @@ let inputImagem = document.querySelector("#checkbox2");
 let inputNome = document.querySelector("#name");
 let inputEmail = document.querySelector("#email");
 
+//document.getElementById('myInputId').DatePickerX.init();
+
 botaoEnviar.addEventListener('click',function cancelaEnvio(){
     if(inputImagem.checked){
         validadorcaracteres()
