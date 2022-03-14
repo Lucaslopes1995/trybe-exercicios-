@@ -11,7 +11,7 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}/bloco7/aula1/ex2.js"
+            "program": "${workspaceFolder}/bloco8/aula1/expratica/ex1.js"
         }
     ]
 }
