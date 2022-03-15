@@ -126,4 +126,4 @@ function studentAverage(nomes,notas) {
 
 
 }
-console.log(studentAverage(students,grades))
+//console.log(studentAverage(students,grades))
